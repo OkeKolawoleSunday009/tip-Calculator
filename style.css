@@ -78,6 +78,7 @@ body{
 }
 input{
     font-size: 20px;
+
     /* overflow: hidden; */
 }
 .inputBox{
@@ -87,6 +88,12 @@ input{
     background-color: rgb(188, 247, 227);
     border-radius: 5px;
 }
+.inputBox_person{
+    border-radius: 5px;
+    /* border:none */
+
+}
+
 .inputBox::placeholder{
     float: right;
     font-size: 20px;
