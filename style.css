@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+    height: 100vh;
+    position: relative;
+}
+.container{
+    margin: 0 auto;
+    width: 700px;
+    height: 300px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    padding: 15px;
+    /* space the buttons equally */
+    gap:20px
+ 
+
+}
+.btn{
+    width: 80px;
+    height: 40px;
+    border: none;
+    background-color:rgb(56, 80, 56) ;  
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    /* to fit the buttons to match columns nand mobile view also */
+    flex: 1  0 calc(30% - 10px);                
+    /* display: flex; */
+    
+
+
+}
+.btn:hover{
+    background-color: aquamarine;
+    cursor: pointer ;
+    color: black;
+}
+.button{
+    /* width: 100%; */
+     box-sizing: border-box;
+    /* background-color: red; */
+    display: flex;
+    /* wrap it if it extends */
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* flex-basis: 65%; not useful or undecided */
+    justify-content: space-between;
+    gap: 13px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+   
+}
+.box1, .box2{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 20px;
+    /* align-items: center; */
+}
+.box2{
+    background-color: rgb(56, 80, 56);
+    position: relative;
+    
+  
+}
+input{
+    font-size: 20px;
+}
+.inputBox{
+    width: 100%;
+    height: 30px;
+    border: 2px solid  rgb(49, 250, 183); 
+    background-color: rgb(188, 247, 227);
+    border-radius: 5px;
+}
+.inputBox::placeholder{
+    float: right;
+    font-size: 20px;
+    color: rgb(56, 80, 56);
+    margin-top: 5px;
+
+}
+#inputPer::placeholder{
+    float: right;
+    margin-top: 10px;
+    margin-right: 5px;
+
+}
+.tip, .total{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+   
+}
+
+#inputPer{
+    width: 80px;
+    height: 40px;
+    border: none;
+    background-color:white; 
+    border-radius: 5px;
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+    border: 2px solid  rgb(49, 250, 183); ;
+    /* also for the custom place */
+    flex: 1  0 calc(30% - 10px);
+
+     
+}
+.reset{
+    width: 90%;
+    height: 40px;
+    border: none;
+    background-color:rgb(49, 250, 183); ;;  
+    border-radius: 5px;
+    color: black ;
+    font-size: 20px;
+    font-weight: bolder;
+    position: absolute;
+    bottom: 10%;
+    cursor: pointer;
+}
+.bill{
+    margin-bottom: 15px;
+}
+.target, .target_two{
+   
+    font-size: 13px;
+    margin-bottom: 7px;
+    letter-spacing:2px;
+}
+.target_two{
+    color: red;
+}
+
+.error{
+    justify-content: space-between;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+}
+.all{
+    margin-bottom: 100px;
+}
+.header{
+    position: absolute;
+    top: 3%;
+    font-size: 25px;
+}
+.attribution{
+    position: absolute;
+    bottom: 0;
+    font-size: 15px; text-align: center;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+  /* trying to set up iphone SE but its not responsive */
+/* @media screen and (max-width: 300px) {
+    .container{
+        box-sizing: border-box;
+        width: 400px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+
+} */
+ @media screen and (max-width: 800px) {
+    .container{
+        width: 300px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .header{
+        position: absolute;
+        top: 0;
+        font-size: 25px;
+    }
+    body{
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        background-color: aquamarine;
+        height: 100vh;
+    }
+    .box1{
+        /* width: 100%; */
+        display: flex;
+        flex: 1;
+
+    }
+    .inputBox, .inputBox_person{
+        cursor: pointer;
+        width: 100%;
+    }
+    .button{
+        width: 100%;
+        column-gap: 37px;
+    }
+    .btn{
+        width: 110px;
+        height: 40px;
+    }
+    #inputPer{
+        width: 105px;
+        height: 40px;
+    }
+    .box1, .box2{
+        padding: 20px;
+
+    }
+    .target, .target_two{
+        display: flex;
+        font-size: 10px;
+        margin-bottom: 7px;
+        /* letter-spacing:1px; */
+    }
+  
+  }

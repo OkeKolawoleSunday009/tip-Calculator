@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <!-- <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> -->
+
+    <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    
+  </head>
+  <body>
+    <div class="header">
+      <p>SPL <br> FPL</p>
+    </div>
+    <div class="container">
+      <div class="box1">
+        <div class="bill">
+          <p class="target">Bill</p>
+          <input type="number" class="inputBox" placeholder="$142.55" />
+        </div>
+      
+
+        <p>Select Tips %</p>
+
+        <div class="button">
+          <button class="btn" >$5</button>
+          <button class="btn"> $10</button>
+          <button class="btn"> $15</button>
+          <button class="btn">$20</button>
+          <button class="btn">$50</button>
+          <input id="inputPer" type="number"  placeholder="custom"/>
+        </div>
+         <div class="error">
+          <p class="target">Number of People</p>
+          <p class="target_two" hidden>cant be 0</p>
+         </div>
+      
+        <input type="number" class="inputBox_person"  placeholder="0" />
+      </div>
+      <div class="box2">
+        <div class="all">
+          <div class="tip">
+            <div class="tiptext">
+              <p style="color:white; letter-spacing: 2px;">Tip Amount</p>
+              <p  style="color:rgb(181, 186, 184); font-size:14px; margin-top: 5px;" ;>/ person</p>
+  
+            </div>
+            
+          
+            <h1 style="color: aquamarine" id="tip">$0.00</h1>
+          </div>
+          
+          <div class="total">
+            <div class="totaltext">
+              <p style="color:white; letter-spacing: 2px;">Total</p>
+              <p style="color:rgb(181, 186, 184); font-size:14px;  margin-top: 5px";>/ person</p>
+            </div>
+           
+            <h1 style="color: aquamarine;" id="totals">$0.00</h1>        
+          </div>
+
+        </div>
+       
+       
+
+        <button class="reset" >RESET</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+
+
+    <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Oke Kolawole Sunday</a>.
+  </div>
+
+  </body>
+</html>
