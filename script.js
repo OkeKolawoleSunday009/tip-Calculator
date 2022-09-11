@@ -67,16 +67,13 @@ input_custom.addEventListener('keyup', function(e){
 
  inputBox_person.addEventListener('keyup', function(e){
     if ( inputBox_person.value == 0){
-        // alert('no');
-        // var error_msg = document.appendChild(target_two);
         $(".target_two").css("display", "block");
         $(".target_two").addClass("target_error");
-        var count = 0;
-     }
-     else{
-        count--;
-        // $("p").remove(".target_two");
-        // $(".target_two").removeClass("target_error");
+     }else if (inputBox_person.value == " "){
+         $(".target_two").css("display", "none");
+         count--;
+
+     }else{
         $(".target_two").css("display", "none");
 
      }
