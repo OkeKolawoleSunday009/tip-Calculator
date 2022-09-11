@@ -1,7 +1,9 @@
 // select the input field to enter amount
 var input = document.querySelector('.inputBox'); 
 // select the input field to enter custom percentage
-var input2 = document.querySelector('#inputPer');
+var input_custom = document.querySelector('#inputPer');
+var inputBox_person = document.querySelector('.inputBox_person');
+
 
 // select all the btns of percentage
 var btn = document.querySelectorAll('.btn');
@@ -19,13 +21,13 @@ var tip = 0;
 //  reset button
 document.querySelector('.reset').addEventListener('click',function(e){
    input.value = 0.00;
-   input2.value = 0.00
+   input_custom.value = 0.00
 })
 
 //this is an event listner that when u type in the custom it shows in the tip section of the ui
 // this might not be what is asked in the lesson
 
-input2.addEventListener('keyup', function(e){
+input_custom.addEventListener('keyup', function(e){
 
 
 //   for the custom when u enter the percentage
@@ -53,10 +55,30 @@ input2.addEventListener('keyup', function(e){
         var result = totals.toFixed(2);
 
 
-        // document.getElementById('totals').textContent = `$${result + input2.value}`;
+        // document.getElementById('totals').textContent = `$${result + input_custom.value}`;
         document.getElementById('totals').textContent = `$${result }`;
 
      });
  }
 
+ 
  //remain the number of person using jquery
+
+
+ inputBox_person.addEventListener('keyup', function(e){
+    if ( inputBox_person.value == 0){
+        // alert('no');
+        // var error_msg = document.appendChild(target_two);
+        $(".target_two").css("display", "block");
+        $(".target_two").addClass("target_error");
+        var count = 0;
+     }
+     else{
+        count--;
+        // $("p").remove(".target_two");
+        // $(".target_two").removeClass("target_error");
+        $(".target_two").css("display", "none");
+
+     }
+
+  });

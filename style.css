@@ -78,6 +78,7 @@ body{
 }
 input{
     font-size: 20px;
+    /* overflow: hidden; */
 }
 .inputBox{
     width: 100%;
@@ -138,19 +139,24 @@ input{
     margin-bottom: 15px;
 }
 .target, .target_two{
-   
     font-size: 13px;
     margin-bottom: 7px;
     letter-spacing:2px;
 }
 .target_two{
+    color: black;
+    display: none;
     color: red;
+
+}
+.target_error{
+    color: red;
+
 }
 
-.error{
+.error_section{
     justify-content: space-between;
     width: 100%;
-    /* background-color: red; */
     display: flex;
 }
 .all{
@@ -167,6 +173,10 @@ input{
     font-size: 15px; text-align: center;
 }
 .attribution a { color: hsl(228, 45%, 44%); }
+input .inputBox_person:focus{
+    outline: none;
+
+}
   /* trying to set up iphone SE but its not responsive */
 /* @media screen and (max-width: 300px) {
     .container{
