@@ -48,7 +48,7 @@ body{
 }
 .button{
     /* width: 100%; */
-     box-sizing: border-box;
+     /* box-sizing: border-box; */
     /* background-color: red; */
     display: flex;
     /* wrap it if it extends */
@@ -70,16 +70,22 @@ body{
     border-radius: 20px;
     /* align-items: center; */
 }
+
 .box2{
     background-color: rgb(56, 80, 56);
     position: relative;
+    padding: 20px;
+
     
   
 }
-input{
+input .inputBox, .inputBox_person {
     font-size: 20px;
-
+    padding: 5px;
     /* overflow: hidden; */
+}
+input #inputPer{
+    padding: 0;
 }
 .inputBox{
     width: 100%;
@@ -90,6 +96,7 @@ input{
 }
 .inputBox_person{
     border-radius: 5px;
+
     /* border:none */
 
 }
@@ -123,7 +130,7 @@ input{
     color: black;
     font-size: 20px;
     font-weight: bolder;
-    border: 2px solid  rgb(49, 250, 183); ;
+    border: 2px solid  rgb(49, 250, 183); 
     /* also for the custom place */
     flex: 1  0 calc(30% - 10px);
 
@@ -195,11 +202,20 @@ input .inputBox_person:focus{
 
 } */
  @media screen and (max-width: 800px) {
+    .attribution, .header{
+        display: none;
+    }
+    body{
+        display: flex;
+        margin: none;
+        /* margin: 0 auto; */
+    }
     .container{
-        width: 300px;
+        width: 100%;
         height: auto;
         display: flex;
         flex-direction: column;
+        border-radius: 0;
        
     }
     .header{
@@ -209,7 +225,7 @@ input .inputBox_person:focus{
     }
     body{
         display: flex;
-        margin: 0 auto;
+        /* margin: 0 auto; */
         justify-content: center;
         align-items: center;
         background-color: aquamarine;
@@ -219,6 +235,9 @@ input .inputBox_person:focus{
         /* width: 100%; */
         display: flex;
         flex: 1;
+        /* background-color: red; */
+        padding: 10px;
+
 
     }
     .inputBox, .inputBox_person{
