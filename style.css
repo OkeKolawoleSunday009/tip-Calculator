@@ -192,21 +192,18 @@ input .inputBox_person:focus{
 
 }
   /* trying to set up iphone SE but its not responsive */
-/* @media screen and (max-width: 300px) {
-    .container{
-        box-sizing: border-box;
-        width: 400px;
-        height: auto;
-        display: flex;
-        flex-direction: column;
+@media screen and (max-width: 300px) {
+    ;
 
-} */
+}
  @media screen and (max-width: 800px) {
     .attribution{
+        position: absolute;
         bottom: 0;
         /* display: none; */
     }
     body{
+        position: relative;
         display: flex;
         margin: none;
         /* margin: 0 auto; */
