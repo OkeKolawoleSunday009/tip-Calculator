@@ -212,12 +212,17 @@ input .inputBox_person:focus{
     .attribution{
         position: absolute;
         bottom: 0;
-        display: none;
-    }
+        /* display: none; */
+        /* display: flex; */
+        /* flex-wrap: wrap; */
+        text-align: center;
+
+}
     body{
         position: relative;
         display: flex;
         margin: none;
+        height: 100vh;
         /* margin: 0 auto; */
     }
     .container{
@@ -226,6 +231,7 @@ input .inputBox_person:focus{
         display: flex;
         flex-direction: column;
         border-radius: 0;
+        border-radius: 20px;
        
     }
     .header{
