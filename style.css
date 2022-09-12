@@ -98,12 +98,14 @@ input #inputPer{
     background-image: url(images/icon-dollar.svg);
     background-repeat: no-repeat;
     background-position:  5px 5px;
+    text-align: right;
 }
 .inputBox_person{
     border-radius: 5px;
     background-image: url(images/icon-person.svg);
     background-repeat: no-repeat;
     background-position:  5px 7px;
+    text-align: right
     /* border:none */
 
 }
@@ -143,6 +145,7 @@ input #inputPer{
     border: 2px solid  rgb(49, 250, 183); 
     /* also for the custom place */
     flex: 1  0 calc(30% - 10px);
+    
 
      
 }
