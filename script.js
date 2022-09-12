@@ -20,8 +20,9 @@ var tip = 0;
 
 //  reset button
 document.querySelector('.reset').addEventListener('click',function(e){
-   input.value = 0.00;
-   input_custom.value = 0.00
+   input.value = 'fill';
+   inputBox_person.value = 0.00;
+   input_custom.value = "custom";
 })
 
 //this is an event listner that when u type in the custom it shows in the tip section of the ui
@@ -72,10 +73,10 @@ input_custom.addEventListener('keyup', function(e){
         $('.inputBox_person').css("outline", "2px solid red");
         $('.inputBox_person').css("border", "none");
 
-     }else if (inputBox_person.value == " "){
+     }else if (inputBox_person.value == ""){
          $(".target_two").css("display", "none");
          $('.inputBox_person').css("outline", "2px solid red");
-         $(".target_two").remove("target_error");
+         $("target_error").remove();
 
 
      }else{
