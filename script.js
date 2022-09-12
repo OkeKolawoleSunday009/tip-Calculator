@@ -70,18 +70,19 @@ input_custom.addEventListener('keyup', function(e){
         $(".target_two").css("display", "block");
         $(".target_two").addClass("target_error");
         $('.inputBox_person').css("outline", "2px solid red");
-        $('.inputBox_person').css("border", "none")
+        $('.inputBox_person').css("border", "none");
 
      }else if (inputBox_person.value == " "){
          $(".target_two").css("display", "none");
-         $('.inputBox_person').css("outline", "2px solid red")
+         $('.inputBox_person').css("outline", "2px solid red");
+         $(".target_two").remove("target_error");
 
 
      }else{
         $(".target_two").css("display", "none");
         $('.inputBox_person').css("outline", "none");
-        $('.inputBox_person').css("border", "2px solid  rgb(49, 250, 183");
+        $('.inputBox_person').css("border", "2px solid  rgb(49, 250, 183)");
      }
-     return parseFloat(inputBox_person.person)
+     return parseFloat(inputBox_person.value)
 
   });
