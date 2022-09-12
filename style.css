@@ -203,7 +203,7 @@ input .inputBox_person:focus{
 } */
  @media screen and (max-width: 800px) {
     .attribution, .header{
-        display: none;
+        /* display: none; */
     }
     body{
         display: flex;
