@@ -222,7 +222,7 @@ input .inputBox_person:focus{
         position: relative;
         display: flex;
         margin: none;
-        height: 200vh;
+        height: 250vh;
         /* margin: 0 auto; */
     }
     .container{
