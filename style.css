@@ -208,7 +208,7 @@ input .inputBox_person:focus{
     ;
 
 } */
- @media screen and (max-width: 800px) {
+ @media screen and (max-width: 768px) {
     .attribution{
         position: absolute;
         bottom: 0;
@@ -222,7 +222,7 @@ input .inputBox_person:focus{
         position: relative;
         display: flex;
         margin: none;
-        height: 250vh;
+        height: 200vh;
         /* margin: 0 auto; */
     }
     .container{
