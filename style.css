@@ -227,7 +227,7 @@ input .inputBox_person:focus{
     }
     .container{
         width: 100%;
-        height: auto;
+        height: 200vh;
         display: flex;
         flex-direction: column;
         border-radius: 0;
